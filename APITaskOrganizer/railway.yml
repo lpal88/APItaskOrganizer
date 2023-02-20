@@ -1,0 +1,8 @@
+name: my-express-app
+
+build:
+  env: production
+  command: npm install && npm run build
+
+start:
+  command: npm start
