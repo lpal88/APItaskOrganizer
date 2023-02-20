@@ -1,0 +1,34 @@
+{
+   "colegio" : 
+    {
+        "id": 11,
+        "description": "colegio",
+        "image": "colegio.png"
+    },
+    "desayunar" : {
+        "id": 12,
+        "description": "desayunar",
+        "image": "desayunar.png"
+    },
+    "estudiar" : {
+        "id": 13,
+        "description": "estudio",
+        "image": "estudio.png"
+    },
+    "trabajo_en_grupo" : {
+        "id": 14,
+        "description": "trabajo en grupo",
+        "image": "trabajo_en_grupo.png"
+    },
+    "natacion" : {
+        "id": 15,
+        "description": "natacion",
+        "image": "natacion.png"
+    },
+    "jugar_con_el_ordenador" : {
+        "id": 16,
+        "description": "jugar con el ordenador",
+        "image": "jugar_con_el_ordenador.png"
+    }
+    
+}

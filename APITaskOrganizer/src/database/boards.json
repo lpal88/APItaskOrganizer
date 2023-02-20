@@ -1,0 +1,65 @@
+{
+  "lunes": {
+    "id": 111,
+    "userId": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+    "label": "lunes",
+    "taskArray": [
+      {
+        "desayunar": {
+          "id": 12,
+          "description": "desayunar",
+          "image": "desayunar.png"
+        }
+      },
+      {
+        "colegio": {
+          "id": 11,
+          "description": "colegio",
+          "image": "colegio.png"
+        }
+      }
+    ]
+  },
+  "martes": {
+    "id": 112,
+    "userId": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+    "label": "martes",
+    "taskArray": [
+      {
+        "desayunar": {
+          "id": 12,
+          "description": "desayunar",
+          "image": "desayunar.png"
+        }
+      },
+      {
+        "colegio": {
+          "id": 11,
+          "description": "colegio",
+          "image": "colegio.png"
+        }
+      }
+    ]
+  },
+  "domingo": {
+    "id": 113,
+    "userId": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+    "label": "domingo",
+    "taskArray": [
+      {
+        "desayunar": {
+          "id": 12,
+          "description": "desayunar",
+          "image": "desayunar.png"
+        }
+      },
+      {
+        "natacion": {
+          "id": 15,
+          "description": "natacion",
+          "image": "natacion.png"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "users": [
+      {
+        "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+        "name": "User1",
+        "email": "user1@u.com",
+        "password": "password"
+      },
+      {
+        "id": "61dbae02-c147-4e28-863c-db7bd402b2d7",
+        "name": "User2",
+        "email": "user2@u.es",
+        "password": "password"
+      }    
+    ]
+  }
