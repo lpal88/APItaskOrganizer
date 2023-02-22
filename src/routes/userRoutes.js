@@ -5,5 +5,6 @@ const auth = require('../utils/authentication')
 router
   .route('/')
   .post(auth.login)
+  .post(auth.singup)
 
 module.exports.router = router

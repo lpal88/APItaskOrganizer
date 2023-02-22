@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
 
 router.use('/boards', boardsRoutes.router)
 router.use('/tasks', tasksRoutes.router)
-router.use('/login', userRoutes.router)
+router.use('/user', userRoutes.router)
 router.use('/pictograms', pictogramsRoutes)
 
 module.exports.router = router

@@ -34,7 +34,7 @@ const login = (req, res, next) => {
 
       if (user) {
         // autorizado, se permite el acceso
-        // TODO
+        authService.addSession(user.id, session.id)
       } else {
         res.status(401).send({ mensaje: 'No está autorizado/a' })
       }
@@ -47,6 +47,12 @@ const login = (req, res, next) => {
   }
 }
 
+const singup = (req, res, next) => {
+  const { newUser } = req.body
+  authService.addNewUser(newUser, newUser.email)
+}
+
 module.exports = {
-  login
+  login,
+  singup
 }

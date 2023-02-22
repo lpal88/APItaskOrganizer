@@ -30,9 +30,21 @@ const addSession = (id, sessionId) => {
   )
 }
 
+const addNewUser = (newUser) => {
+  fs.writeFile(
+    './src/database/users.json',
+    JSON.stringify(newUser, null, 2),
+    'utf8',
+    () => {
+      throw new Error('ERROR AL ESCRIBIR')
+    }
+  )
+}
+
 module.exports = {
   checkUserEmail,
   addSession,
   checkSession,
-  checkIfSessionExist
+  checkIfSessionExist,
+  addNewUser
 }

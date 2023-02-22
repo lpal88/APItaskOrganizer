@@ -25,9 +25,16 @@ const checkIfSessionExist = (userId) => {
   return !session ? false : session.sessionId
 }
 
+const addNewUser = (newUser, newUserEmail) => {
+  if (!authenticationModel.checkUserEmail(newUserEmail)) {
+    authenticationModel.addNewUser(newUser)
+  }
+}
+
 module.exports = {
   checkUserEmail,
   addSession,
   checkSession,
-  checkIfSessionExist
+  checkIfSessionExist,
+  addNewUser
 }
