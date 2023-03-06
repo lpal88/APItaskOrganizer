@@ -2,6 +2,19 @@ const express = require('express')
 const app = express()
 const index = require('./routes/indexRoutes')
 
+export const handler = async (event) => {
+  const response = {
+    statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Origin': 'http://localhost:5173/#/',
+      'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+    },
+    body: JSON.stringify('Hello from Lambda!')
+  }
+  return response
+}
+
 app.use(express.json())
 app.use((req, res, next) => {
   const date = new Date().toLocaleTimeString()
