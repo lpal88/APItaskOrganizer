@@ -1,19 +1,16 @@
 const express = require('express')
 const app = express()
 const index = require('./routes/indexRoutes')
+const cors = require('cors')
 
-export const handler = async (event) => {
-  const response = {
-    statusCode: 200,
-    headers: {
-      'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Allow-Origin': 'http://localhost:5173/#/',
-      'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
-    },
-    body: JSON.stringify('Hello from Lambda!')
-  }
-  return response
+const corsOptions = {
+  origin: ['http://localhost:5173/#/'],
+  credentials: true,
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
+app.use(cors(
+  corsOptions
+))
 
 app.use(express.json())
 app.use((req, res, next) => {
