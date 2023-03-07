@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const index = require('./routes/indexRoutes')
 const cors = require('cors')
-/*
+
 const corsOptions = {
   origin: ['http://localhost:5173/#/'],
   credentials: true,
@@ -10,9 +10,7 @@ const corsOptions = {
 }
 app.use(cors(
   corsOptions
-))*/
-
-app.use(cors())
+))
 
 app.use(express.json())
 app.use((req, res, next) => {
