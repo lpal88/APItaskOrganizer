@@ -61,5 +61,25 @@
         }
       }
     ]
+  },
+  "jueves": {
+    "idBoard": "293c5ea0-bcb8-11ed-bba7-0de940ed3a7e",
+    "label": "jueves",
+    "taskArray": [
+      {
+        "desayunar": {
+          "id": 12,
+          "description": "desayunar",
+          "img_path": "../images/desayunar.png"
+        }
+      },
+      {
+        "colegio": {
+          "id": 11,
+          "description": "colegio",
+          "img_path": "../images/colegio.png"
+        }
+      }
+    ]
   }
 }
