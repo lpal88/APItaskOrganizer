@@ -2,24 +2,24 @@ const express = require('express')
 const app = express()
 const index = require('./routes/indexRoutes')
 const cors = require('cors')
-/*
+
 const corsOptions = {
-  origin: ['http://localhost:5173/#/'],
+  origin: ['http://localhost:5173'],
   credentials: true,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(
   corsOptions
 ))
- */
+ 
 /* app.use(cors()) */
-
+/* 
 app.use(cors({
   origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204
-}))
+})) */
 
 app.use(express.json())
 app.use((req, res, next) => {
